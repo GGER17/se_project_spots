@@ -1,21 +1,78 @@
 # Project 3: Spots
 
-### Overview  
+### Overview
 
-* Intro  
-* Figma  
-* Images  
-  
+- Intro
+- Figma
+- Images
+
 **Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
+
+This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+
+**Description**
+
+The project idea is to serve as the starter for a social plataform. Here one will be able to share images. Interact with other users post by liking an image. As a social plataform is meant to be used across multiple devices. These devices having having the best experience for the user with the screen widths of 320px to 1440px. So far the project was developed using HTML, CSS, and Figma. Other smaller reasources included the Eeb, DevTools and use of AI.
+
+---
+
+**_HTML_**
+
+- HTML like in many of webpages was used to created the main structure of the whole webpage.
+- While the webpage is not styled correctly on it's own gives us an idea of what contents we expect to see.
+- Plus it allows us to give classes to out sections to be able to work with them in CSS.
+
+**_CSS_**
+
+- The CSS was used to style the webpage. They would be what we called the "makeover-tools" and we are the "makeover-artist" using them.
+- With the classes used from our HTML we can indentify what it is we want to style, (Much like when we tell our stylist what we want to change by telling the hair, eyeshadow, and etc).
+- With this we were able to do the modifications to be a responsive page and adapt from small 320px mobile screens to 1440px desktops.
+
+**_Figma_**
+
+- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+- Figma was used to present the reference for this desinged as it was worked on.
+- It also provided most of the resources we needed to decorate or style our webpage adequately.
+
+---
+
+**_Web_**
+
+- The web was also used for outside internet references.
+- To understand how social webpages functioned most times we had to dive deep into their code using the Devtools in out access.
+
+**_DevTools_**
+
+- Is a we used to inspect out webpage and make sure we checked well for mobile to desktop compatibilty.
+- It was also used to observe the function and how other websites similar to our ideal one work.
+
+**_AI_**
+
+- While some view the use of AI as negative impact in webdeveloping, it would be good to think of its benefits.
+- With the AI we supported the developer with smaller tasks. As plenty of hours are spent, humans grow tired and may miss small details like a ";" or typing "content" instead of "contents," so once adapted for smaller issues it's great to proofread and point out issues like those.
+
+**GitHub**
+
+- [Link to GitHub Pages with deplyed project]()
+
+**Pitch video**
+
+- [Link to profile pitch video]()
+
+---
+
+---
+
+---
+
+**Images**
+
+The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+
 Good luck and have fun!
+
+---
+
+---
+
+---
