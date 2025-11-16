@@ -53,7 +53,7 @@ The project idea is to serve as the starter for a social platform. Here one will
 
 **GitHub**
 
-- [Link to GitHub Pages with deployed project]()
+- [Link to GitHub Pages with deployed project](https://gger17.github.io/se_project_spots/)
 
 **Pitch video**
 
