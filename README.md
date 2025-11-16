@@ -53,7 +53,7 @@ The project idea is to serve as the starter for a social plataform. Here one wil
 
 **GitHub**
 
-- [Link to GitHub Pages with deplyed project]()
+- [Link to GitHub Pages with deployed project]()
 
 **Pitch video**
 
