@@ -1,4 +1,29 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: #fcf5e5;
+}
+
 .page {
+  display: flex;
+  flex-direction: column;
   background-color: #fcf5e5;
   font-family: Poppins, Arial, Helvetica, sans-serif;
+  gap: 8px;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1320px) {
+  .page {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 630px) {
+  .page {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
