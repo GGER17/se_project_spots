@@ -1,4 +1,4 @@
-.menu__bar {
+.page__menu-bar {
   position: fixed;
   left: 0;
   right: 0;
@@ -12,7 +12,7 @@
   padding: 10px 80px;
 }
 
-.menubar_logo {
+.page__menubar-logo {
   height: 26px;
   width: 94px;
 }
