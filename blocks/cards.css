@@ -8,6 +8,10 @@
   margin-top: 20px;
 }
 
+.cards__list {
+  list-style: none;
+}
+
 .card {
   display: flex;
   flex-direction: column;
