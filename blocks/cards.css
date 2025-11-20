@@ -1,127 +1,31 @@
 .cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  gap: 20px;
   border-bottom: 1px solid rgba(33, 33, 33, 0.4);
-  padding-bottom: 40px;
-  margin-top: 20px;
+  padding: 20px 0 40px;
 }
 
 .cards__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 413px);
+  justify-content: center;
+  grid-template-rows: auto auto;
+  gap: 20px;
   list-style: none;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  width: 100%;
-  column-gap: 8px;
-}
-
-.card__caption {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: self-start;
-  font-size: 20px;
-  padding: 10px 0 0 0;
-}
-
-.card__text {
+  padding: 0;
   margin: 0;
-}
-
-.card__icon {
-  height: 20px;
-  width: 23px;
-  opacity: 40%;
-  cursor: pointer;
-}
-
-.card__icon:hover {
-  opacity: 100%;
-}
-
-.card__image {
-  height: auto;
-  width: 100%;
-  background-size: contain;
-  border-radius: 8px;
-  margin: 0;
-  aspect-ratio: 1/1;
 }
 
 @media (max-width: 1320px) {
-  .cards {
+  .cards__list {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 16px;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    column-gap: 8px;
-  }
-
-  .card__image {
-    height: auto;
-    width: 100%;
-    background-size: contain;
-    border-radius: 8px;
-    margin: 0;
-    aspect-ratio: 1/1;
-  }
-
-  .card__text {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 264px;
-  }
 }
 
 @media (max-width: 630px) {
-  .cards {
+  .cards__list {
     grid-template-columns: 1fr;
     gap: 12px;
     justify-content: center;
-  }
-
-  .card {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    column-gap: 8px;
-    min-width: 288px;
-  }
-
-  .card__caption {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 20px;
-    padding: 10px 0 0 0;
-  }
-
-  .card__image {
-    height: auto;
-    width: 100%;
-    background-size: contain;
-    border-radius: 8px;
-    margin: 0;
-    aspect-ratio: 1/1;
-  }
-
-  .card__text {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 265px;
   }
 }
