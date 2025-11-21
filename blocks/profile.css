@@ -5,19 +5,15 @@
 
 .profile__contents {
   display: grid;
-
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   justify-content: space-between;
 }
-/*removed from header->profile
-  padding: 0 20px;
-  margin-top: 80px;*/
 
 .profile__content {
   display: flex;
   gap: 20px;
-  max-width: 320px;
+  max-width: 630px;
   width: 100%;
 }
 
@@ -50,6 +46,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 420px;
+  white-space: normal;
 }
 
 .profile__text {
@@ -60,6 +58,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  max-width: 420px;
+  white-space: normal;
 }
 
 .profile__edit {
