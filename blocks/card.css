@@ -18,9 +18,11 @@
 .card__text {
   margin: 0;
 }
+
 .card__button {
   background: none;
   border: none;
+  padding: 0;
   cursor: pointer;
 }
 
