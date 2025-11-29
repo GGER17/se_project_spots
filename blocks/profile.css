@@ -71,6 +71,7 @@
   background: none;
   border: none;
   padding: 0;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .profile__edit:hover {
@@ -102,6 +103,7 @@
   color: #fcf5e5;
   border: none;
   cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .profile__button:hover {

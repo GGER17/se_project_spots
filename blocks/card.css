@@ -30,6 +30,7 @@
   height: 20px;
   width: 23px;
   opacity: 40%;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .card__button:hover .card__icon {
