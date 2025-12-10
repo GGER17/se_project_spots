@@ -97,22 +97,3 @@ newPostCloseButton.addEventListener("click", function () {
 initialCards.forEach((element) => {
   console.log(element.name);
 });
-
-/*
-function openModal(modal) {
-  modal.classList.add("modal_is-opened");
-}
-
-reservationCloseBtn.addEventListener("click", function () {
-  closeModal(reservationModal);
-});
-
-  signupButton.addEventListener("click", function () {
-  // Open the modal with openModal()
-  openModal(signupModal);
-});
-
-  function closeModal(modal) {
-  modal.classList.remove("modal_is-opened");
-}
-*/
