@@ -52,7 +52,7 @@
 
 .profile__text {
   margin: 0;
-  opacity: 70%;
+  opacity: 0.7;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -66,7 +66,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  opacity: 70%;
+  opacity: 0.7;
   cursor: pointer;
   background: none;
   border: none;
@@ -75,7 +75,7 @@
 }
 
 .profile__edit:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .profile__edit-text {
@@ -107,92 +107,13 @@
 }
 
 .profile__button:hover {
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 @media (max-width: 1320px) {
   .profile__contents {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-  }
-
-  .profile__content {
-    display: flex;
-    gap: 20px;
-    width: 100%;
-  }
-
-  .profile__image {
-    border-radius: 8px;
-  }
-
-  .profile__words {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .profile__caption {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    gap: 12px;
-  }
-
-  .profile__title {
-    margin: 0;
-  }
-
-  .profile__text {
-    margin: 0;
-    opacity: 70%;
-  }
-
-  .profile__edit {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    opacity: 70%;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 0;
-  }
-
-  .profile__edit:hover {
-    opacity: 100%;
-  }
-
-  .profile__edit-text {
-    margin: 0;
-  }
-
-  .profile__pencil {
-    height: 12px;
-    width: 12px;
-  }
-
-  .profile__button {
-    display: flex;
-    align-items: center;
-    border-radius: 8px;
-    padding: 18px 32px;
-    width: 149px;
-    height: 52px;
-    font-size: 16px;
-    white-space: nowrap;
-    align-self: end;
-    justify-self: end;
-    gap: 8px;
-    background-color: #212121;
-    color: #fcf5e5;
-    border: none;
-    cursor: pointer;
-  }
-
-  .profile__button:hover {
-    opacity: 80%;
   }
 }
 
@@ -209,50 +130,31 @@
   }
 
   .profile__content {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
   .profile__image {
-    border-radius: 8px;
     height: 80px;
     width: 80px;
   }
 
   .profile__title {
-    margin: 0;
     width: 100%;
     font-size: 20px;
   }
 
   .profile__words {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     align-items: center;
   }
 
   .profile__button {
-    display: flex;
-    border-radius: 8px;
-    padding: 18px 32px;
     width: 100%;
     max-width: none;
     box-sizing: border-box;
-    font-size: 16px;
-    gap: 8px;
-    background-color: #212121;
-    color: #fcf5e5;
-    border: none;
     margin: 20px 0;
-    align-items: center;
     justify-content: center;
-  }
-
-  .profile__button:hover {
-    opacity: 80%;
   }
 
   .profile__caption {

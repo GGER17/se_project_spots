@@ -83,7 +83,6 @@ function getCardElement(data) {
   const cardTrashButton = cardElement.querySelector(".card__trash-button");
   cardTrashButton.addEventListener("click", () => {
     cardElement.remove();
-    cardElement = null;
   });
 
   cardImageElement.addEventListener("click", () => {
@@ -122,8 +121,12 @@ function handleAddCardSubmit(evt) {
   };
   console.log(cardCaptionInput.value);
   console.log(linkInput.value);
-  const cardsElement = getCardElement(inputValues);
-  cardsList.prepend(cardsElement);
+  const cardElement = getCardElement(inputValues);
+  cardsList.prepend(cardElement);
+
+  evt.target.reset();
+
+  linkInput.focus();
 
   closeModal(newPostModal);
 }
@@ -154,6 +157,6 @@ newPostCloseButton.addEventListener("click", function () {
 });
 
 initialCards.forEach((element) => {
-  const cardsElement = getCardElement(element);
-  cardsList.append(cardsElement);
+  const cardElement = getCardElement(element);
+  cardsList.append(cardElement);
 });

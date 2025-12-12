@@ -11,19 +11,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: self-start;
+  align-items: flex-start;
   font-size: 20px;
   padding: 10px 0 0 0;
 }
 
 .card__text {
   margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 353px;
 }
 
 .card__button {
   height: 20px;
   width: 23px;
-  opacity: 40%;
+  opacity: 0.4;
   transition: opacity 0.2s ease-in-out;
   background: transparent url("../images/Union.png") center no-repeat;
   border: none;
@@ -33,7 +37,7 @@
 }
 
 .card__button:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .card__button_active {
@@ -42,7 +46,7 @@
 }
 
 .card__button_active:hover {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .card__trash-button {
@@ -70,32 +74,12 @@
   border-radius: 8px;
   margin: 0;
   aspect-ratio: 1/1;
+  cursor: pointer;
 }
 
-@media (max-width: 1320px) {
-  .card {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
-    column-gap: 8px;
-  }
-
-  .card__image {
-    height: auto;
-    width: 100%;
-    background-size: contain;
-    border-radius: 8px;
-    margin: 0;
-    aspect-ratio: 1/1;
-  }
-
-  .card__text {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    max-width: 264px;
-  }
+.card__image:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
 }
 
 @media (max-width: 630px) {
@@ -127,9 +111,6 @@
   }
 
   .card__text {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
     max-width: 265px;
   }
 }

@@ -41,11 +41,6 @@
   transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 }
 
-.modal__image-container_is-opened {
-  visibility: visible;
-  opacity: 1;
-}
-
 .modal__image {
   max-width: 80vw;
   max-height: 80vh;
@@ -80,10 +75,11 @@
   width: 40px;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 .modal__close-image:hover {
-  opacity: 40%;
+  opacity: 0.4;
 }
 
 .modal__close-button {
@@ -97,13 +93,14 @@
   align-items: center;
   border: none;
   background: none;
-  opacity: 40%;
+  opacity: 0.4;
   padding: 0 0 10px;
   transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .modal__close-button:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .modal__title {
@@ -132,7 +129,7 @@
 
 .modal__input::placeholder {
   color: #212121;
-  opacity: 30%;
+  opacity: 0.3;
 }
 
 .modal__input:hover {
@@ -150,7 +147,7 @@
 }
 
 .modal__submit-button:hover {
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 @media (max-width: 630px) {
@@ -175,7 +172,7 @@
     align-items: center;
     border: none;
     background: none;
-    opacity: 40%;
+    opacity: 0.4;
     padding: 10px 0;
   }
 

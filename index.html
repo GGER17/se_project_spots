@@ -34,7 +34,7 @@
                 <button class="profile__edit">
                   <img
                     class="profile__pencil"
-                    src="./images/Group 2.svg"
+                    src="./images/Group2.svg"
                     alt="Pencil image"
                   />
                   <span class="profile__edit-text">Edit profile</span>
@@ -44,7 +44,7 @@
             <button class="profile__button">
               <img
                 src="./images/Group 26.svg"
-                alt="+"
+                alt="Add new post"
                 class="profile__button-icon"
               />
               <span class="profile__button-text">New Post</span>
@@ -124,6 +124,7 @@
                 type="url"
                 class="modal__input"
                 placeholder="Place a link to the picture"
+                required
               />
             </label>
             <label for="card-caption-input" class="modal__label">
@@ -133,6 +134,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                required
               />
             </label>
             <button type="submit" class="modal__submit-button">Save</button>
@@ -141,13 +143,15 @@
       </div>
       <div class="modal" id="preview-modal">
         <div class="modal__image-container">
-          <button class="modal__close-image" type="button" aria-label="Close modal">
-          </button>
+          <button
+            class="modal__close-image"
+            type="button"
+            aria-label="Close modal"
+          ></button>
           <img class="modal__image" src="#" alt="" />
           <p class="modal__text"></p>
         </div>
       </div>
-    </div>
     </div>
     <script src="./scripts/index.js"></script>
   </body>
