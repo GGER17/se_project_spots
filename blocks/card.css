@@ -4,6 +4,7 @@
   height: auto;
   width: 100%;
   column-gap: 8px;
+  position: relative;
 }
 
 .card__caption {
@@ -20,21 +21,46 @@
 }
 
 .card__button {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-}
-
-.card__icon {
   height: 20px;
   width: 23px;
   opacity: 40%;
   transition: opacity 0.2s ease-in-out;
+  background: transparent url("../images/Union.png") center no-repeat;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
 
-.card__button:hover .card__icon {
+.card__button:hover {
   opacity: 100%;
+}
+
+.card__button_active {
+  background-image: url("../images/UnionRed.svg");
+  opacity: 1;
+}
+
+.card__button_active:hover {
+  opacity: 40%;
+}
+
+.card__trash-button {
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: transparent url(../images/State=Default.svg) center no-repeat;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.card__trash-button:hover {
+  background: transparent url(../images/State=Hover.svg) center no-repeat;
 }
 
 .card__image {

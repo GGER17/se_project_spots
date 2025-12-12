@@ -53,114 +53,20 @@
         </section>
         <section class="cards">
           <ul class="cards__list">
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/1-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="A snow view of Val Thorens out a window"
-                data-type="auto"
-              />
-              <div class="card__caption">
-                <p class="card__text">Val Thorens</p>
-                <button class="card__button">
-                  <img
-                    src="./images/Union.png"
-                    alt="Heart icon"
-                    class="card__icon"
-                  />
-                </button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/2-photo-by-ceiline-from-pexels.jpg"
-                alt="Restaurant terrace"
-                data-type="auto"
-              />
-              <div class="card__caption">
-                <p class="card__text">Restaurant terrace</p>
-                <button class="card__button">
-                  <img
-                    src="./images/Union.png"
-                    alt="Heart icon"
-                    class="card__icon"
-                  />
-                </button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/3-photo-by-tubanur-dogan-from-pexels.jpg"
-                alt="An outdoor cafe"
-                data-type="auto"
-              />
-              <div class="card__caption">
-                <p class="card__text">An outdoor cafe</p>
-                <button class="card__button">
-                  <img
-                    src="./images/Union.png"
-                    alt="Heart icon"
-                    class="card__icon"
-                  />
-                </button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/4-photo-by-maurice-laschet-from-pexels.jpg"
-                alt="A very long bridge over a green forest"
-                data-type="auto"
-              />
-              <div class="card__caption">
-                <p class="card__text">A very long bridge, over the forest</p>
-                <button class="card__button">
-                  <img
-                    src="./images/Union.png"
-                    alt="Heart icon"
-                    class="card__icon"
-                  />
-                </button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/5-photo-by-van-anh-nguyen-from-pexels.jpg"
-                alt="Tunnel with morning light"
-                data-type="auto"
-              />
-              <div class="card__caption">
-                <p class="card__text">Tunnel with morning light</p>
-                <button class="card__button">
-                  <img
-                    src="./images/Union.png"
-                    alt="Heart icon"
-                    class="card__icon"
-                  />
-                </button>
-              </div>
-            </li>
-            <li class="card">
-              <img
-                class="card__image"
-                src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg"
-                alt="Mountain house"
-                data-type="auto"
-              />
-              <div class="card__caption">
-                <p class="card__text">Mountain house</p>
-                <button class="card__button">
-                  <img
-                    src="./images/Union.png"
-                    alt="Heart icon"
-                    class="card__icon"
-                  />
-                </button>
-              </div>
-            </li>
+            <template id="cards-template">
+              <li class="card">
+                <img src="#" alt="" class="card__image" data-type="auto" />
+                <button class="card__trash-button" type="button"></button>
+                <div class="card__caption">
+                  <p class="card__text"></p>
+                  <button
+                    class="card__button"
+                    type="button"
+                    aria-label="Like card"
+                  ></button>
+                </div>
+              </li>
+            </template>
           </ul>
         </section>
       </main>
@@ -173,7 +79,7 @@
             <img
               class="modal__close-icon"
               src="./images/Property 1=Variant2.svg"
-              alt="X"
+              alt="Close button"
             />
           </button>
           <h2 class="modal__title">Edit Profile</h2>
@@ -206,7 +112,7 @@
             <img
               class="modal__close-icon"
               src="./images/Property 1=Variant2.svg"
-              alt="X"
+              alt="Close button"
             />
           </button>
           <h2 class="modal__title">New post</h2>
@@ -233,6 +139,15 @@
           </form>
         </div>
       </div>
+      <div class="modal" id="preview-modal">
+        <div class="modal__image-container">
+          <button class="modal__close-image" type="button" aria-label="Close modal">
+          </button>
+          <img class="modal__image" src="#" alt="" />
+          <p class="modal__text"></p>
+        </div>
+      </div>
+    </div>
     </div>
     <script src="./scripts/index.js"></script>
   </body>
