@@ -119,8 +119,6 @@ function handleAddCardSubmit(evt) {
     name: cardCaptionInput.value,
     link: linkInput.value,
   };
-  console.log(cardCaptionInput.value);
-  console.log(linkInput.value);
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);
 
