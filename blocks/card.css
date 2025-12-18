@@ -52,10 +52,15 @@
 .card__trash-button {
   height: 32px;
   width: 32px;
+  border-radius: 50%;
+  border: none;
   position: absolute;
   right: 10px;
   top: 10px;
-  background: transparent url(../images/State=Default.svg) center no-repeat;
+  background: rgba(0, 0, 0, 0.3);
+  background-image: url(../images/Trashbin_logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
   border: none;
   padding: 0;
   margin: 0;
@@ -64,7 +69,7 @@
 }
 
 .card__trash-button:hover {
-  background: transparent url(../images/State=Hover.svg) center no-repeat;
+  background: #ff6565 url(../images/Trashbin_logo.svg) center no-repeat;
 }
 
 .card__image {

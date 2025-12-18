@@ -125,6 +125,10 @@
   border: 1px solid #21212166;
 }
 
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__input::placeholder {
   color: #212121;
   opacity: 0.3;
@@ -132,6 +136,21 @@
 
 .modal__input:hover {
   border-color: #212121;
+}
+
+.modal__input_type_error:hover {
+  border-color: rgba(255, 0, 0, 0.6);
+}
+
+.modal__input_type_error:focus {
+  outline-color: rgba(255, 0, 0, 0.6);
+}
+
+.modal__error {
+  display: block;
+  color: #ff0000;
+  opacity: 0.7;
+  margin-top: 8px;
 }
 
 .modal__submit-button {
@@ -142,6 +161,16 @@
   width: 100%;
   border-radius: 8px;
   transition: opacity 0.2s ease-in-out;
+}
+
+.modal__submit-button_disabled {
+  background-color: rgba(33, 33, 33, 0.4);
+  border: none;
+  cursor: default;
+}
+
+.modal__submit-button_disabled:hover {
+  background-color: rgba(33, 33, 33, 0.4);
 }
 
 .modal__submit-button:hover {

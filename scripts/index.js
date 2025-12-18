@@ -31,12 +31,14 @@ const initialCards = [
 
 const editProfileButton = document.querySelector(".profile__edit");
 const editProfileModal = document.querySelector("#edit-profile-modal");
+const editProfileSubmitButton = document.querySelector(".modal__submit-button");
 const editProfileCloseButton = editProfileModal.querySelector(
   ".modal__close-button"
 );
 
 const newPostButton = document.querySelector(".profile__button");
 const newPostModal = document.querySelector("#new-post-modal");
+const newPostSubmitButton = document.querySelector(".modal__submit-button");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 
 const profileTitle = document.querySelector(".profile__title");
@@ -108,6 +110,7 @@ function handleProfileFormSubmit(evt) {
   profileTitle.textContent = profileNameInput.value;
   profileText.textContent = descriptionInput.value;
   closeModal(editProfileModal);
+  disabledButton(editProfileSubmitButton, settings);
 }
 
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
@@ -124,6 +127,8 @@ function handleAddCardSubmit(evt) {
 
   evt.target.reset();
 
+  disabledButton(newPostSubmitButton, settings);
+
   linkInput.focus();
 
   closeModal(newPostModal);
@@ -136,6 +141,12 @@ editProfileButton.addEventListener("click", function () {
 
   profileNameInput.value = profileTitle.textContent;
   descriptionInput.value = profileText.textContent;
+
+  resetValidation(
+    profileFormElement,
+    [profileNameInput, descriptionInput],
+    settings
+  );
 });
 
 editProfileCloseButton.addEventListener("click", function () {
