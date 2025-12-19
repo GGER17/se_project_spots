@@ -64,7 +64,7 @@ The project idea is to serve as the starter for a social platform. Here one will
 **Pitch video**
 
 - [Link to profile pitch video](https://drive.google.com/file/d/12LfOx73bNgdeR_UXIc1wHvllSpXry8s6/view?usp=drive_link)
-- [Second Video Title](https://drive.google.com/file/d/1kgqqiUaF-HEvKLodbSKq8P3KkVnrirCb/view?usp=drive_link)
+- [Second link to profile pitch video](https://drive.google.com/file/d/1kgqqiUaF-HEvKLodbSKq8P3KkVnrirCb/view?usp=drive_link)
 
 ---
 
