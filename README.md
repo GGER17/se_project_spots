@@ -28,6 +28,12 @@ The project idea is to serve as the starter for a social platform. Here one will
 - With the classes used from our HTML we can identify what it is we want to style, (Much like when we tell our stylist what we want to change by telling the hair, eyeshadow, and etc).
 - With this we were able to do the modifications to be a responsive page and adapt from small 320px mobile screens to 1440px desktops.
 
+**_JavaScript_**
+
+- JavaScript was the “brain” of the project, the part that made everything interactive instead of just pretty, so overall it tied the entire project together by connecting structure (HTML) and style (CSS) with real functionality.
+- With it, we brought the webpage to life: opening and closing modals, validating forms, liking posts, and dynamically creating new cards.
+- It allowed us to listen for user actions,like clicks or key presses, and respond instantly, giving the platform that real social‑media feel.
+
 **_Figma_**
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
@@ -58,6 +64,7 @@ The project idea is to serve as the starter for a social platform. Here one will
 **Pitch video**
 
 - [Link to profile pitch video](https://drive.google.com/file/d/12LfOx73bNgdeR_UXIc1wHvllSpXry8s6/view?usp=drive_link)
+- [Second Video Title](https://drive.google.com/file/d/1kgqqiUaF-HEvKLodbSKq8P3KkVnrirCb/view?usp=drive_link)
 
 ---
 
