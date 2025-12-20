@@ -31,14 +31,16 @@ const initialCards = [
 
 const editProfileButton = document.querySelector(".profile__edit");
 const editProfileModal = document.querySelector("#edit-profile-modal");
-const editProfileSubmitButton = document.querySelector(".modal__submit-button");
+const editProfileSubmitButton = editProfileModal.querySelector(
+  ".modal__submit-button"
+);
 const editProfileCloseButton = editProfileModal.querySelector(
   ".modal__close-button"
 );
 
 const newPostButton = document.querySelector(".profile__button");
 const newPostModal = document.querySelector("#new-post-modal");
-const newPostSubmitButton = document.querySelector(".modal__submit-button");
+const newPostSubmitButton = newPostModal.querySelector(".modal__submit-button");
 const newPostCloseButton = newPostModal.querySelector(".modal__close-button");
 
 const profileTitle = document.querySelector(".profile__title");
@@ -100,24 +102,24 @@ function getCardElement(data) {
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
 
-  modal.addEventListener("mousedown", OverlayClose);
-  document.addEventListener("keydown", EscClose);
+  modal.addEventListener("mousedown", closeOnOverlay);
+  document.addEventListener("keydown", closeOnEscape);
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
 
-  modal.removeEventListener("mousedown", OverlayClose);
-  document.removeEventListener("keydown", EscClose);
+  modal.removeEventListener("mousedown", closeOnOverlay);
+  document.removeEventListener("keydown", closeOnEscape);
 }
 
-function OverlayClose(evt) {
+function closeOnOverlay(evt) {
   if (evt.target === evt.currentTarget) {
     closeModal(evt.currentTarget);
   }
 }
 
-function EscClose(evt) {
+function closeOnEscape(evt) {
   if (evt.key === "Escape") {
     const openedModal = document.querySelector(".modal_is-opened");
     if (openedModal) {
