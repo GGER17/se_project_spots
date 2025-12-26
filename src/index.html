@@ -6,7 +6,6 @@
     <meta name="description" content="Spots Project Page" />
     <meta name="author" content="Grecia" />
     <meta name="keywords" content="HTML,CSS" />
-    <link rel="stylesheet" href="pages/index.css" />
     <link rel="icon" href="favicon.ico" />
     <title>Spots</title>
   </head>
@@ -14,7 +13,11 @@
     <div class="page">
       <header class="header">
         <nav class="header__menubar">
-          <img src="./images/Logo.svg" alt="Spots Logo" class="header__logo" />
+          <img
+            src="<%=require('./images/Logo.svg')%>"
+            alt="Spots Logo"
+            class="header__logo"
+          />
         </nav>
       </header>
       <main class="content">
@@ -22,7 +25,7 @@
           <div class="profile__contents">
             <div class="profile__content">
               <img
-                src="./images/avatar.jpg"
+                src="<%=require('./images/avatar.jpg')%>"
                 alt="Avatar image"
                 class="profile__image"
               />
@@ -34,7 +37,7 @@
                 <button class="profile__edit">
                   <img
                     class="profile__pencil"
-                    src="./images/Group2.svg"
+                    src="<%=require('./images/Group2.svg')%>"
                     alt="Pencil image"
                   />
                   <span class="profile__edit-text">Edit profile</span>
@@ -43,7 +46,7 @@
             </div>
             <button class="profile__button">
               <img
-                src="./images/Group26.svg"
+                src="<%=require('./images/Group26.svg')%>"
                 alt="Add new post"
                 class="profile__button-icon"
               />
@@ -78,7 +81,7 @@
           <button class="modal__close-button">
             <img
               class="modal__close-icon"
-              src="./images/Property1=Variant2.svg"
+              src="<%=require('./images/Property1=Variant2.svg')%>"
               alt="Close button"
             />
           </button>
@@ -122,7 +125,7 @@
           <button class="modal__close-button">
             <img
               class="modal__close-icon"
-              src="./images/Property1=Variant2.svg"
+              src="<%=require('./images/Property1=Variant2.svg')%>"
               alt="Close button"
             />
           </button>
@@ -168,7 +171,5 @@
         </div>
       </div>
     </div>
-    <script src="./scripts/validation.js"></script>
-    <script src="./scripts/index.js"></script>
   </body>
 </html>

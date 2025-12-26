@@ -1,4 +1,4 @@
-const settings = {
+export const settings = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__submit-button",
@@ -8,8 +8,6 @@ const settings = {
 };
 
 const showInputError = (formEl, inputEl, errorMessage, config) => {
-  //const errorMessageID = inputEl.id + "-error";
-  //const errorMessageEl = document.querySelector("#" + errorMessageID);
   const errorMessageEl = formEl.querySelector(`#${inputEl.id}-error`);
   errorMessageEl.textContent = errorMessage;
   inputEl.classList.add(config.inputErrorClass);
@@ -44,12 +42,12 @@ const toggleButtonState = (inputList, buttonEl, config) => {
   }
 };
 
-const disabledButton = (buttonEl, config) => {
+export const disabledButton = (buttonEl, config) => {
   buttonEl.disabled = true;
   buttonEl.classList.add(config.inactiveButtonClass);
 };
 
-const resetValidation = (formEl, inputList, config) => {
+export const resetValidation = (formEl, inputList, config) => {
   inputList.forEach((input) => {
     hideInputError(formEl, input, config);
   });
@@ -69,11 +67,9 @@ const setEventListeners = (formEl, config) => {
   });
 };
 
-const enableValidation = (config) => {
+export const enableValidation = (config) => {
   const formList = Array.from(document.querySelectorAll(config.formSelector));
   formList.forEach((formElement) => {
     setEventListeners(formElement, config);
   });
 };
-
-enableValidation(settings);
