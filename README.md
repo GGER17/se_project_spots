@@ -34,11 +34,18 @@ The project idea is to serve as the starter for a social platform. Here one will
 - With it, we brought the webpage to life: opening and closing modals, validating forms, liking posts, and dynamically creating new cards.
 - It allowed us to listen for user actions,like clicks or key presses, and respond instantly, giving the platform that real social‑media feel.
 
+**_API_**
+
+- With the help of our APIs we managed to make our changes to the cards and profile permanent even after being refreshed.
+- The API was what made the webpage "come to life" and be more fully active for when a user interacts with it.
+- Making a reausable API clas also did help lessen our work load in the process for when we worked with differernt modals, (Edit modal, Edit avatar modal, etc..) without hindering the work progress.
+
 **_Figma_**
 
 - [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
 - Figma was used to present the reference for this desing as it was worked on.
 - It also provided most of the resources we needed to decorate or style our webpage adequately.
+- [Final link to the project on Figma](https://drive.google.com/file/d/1i_gbe63lWtjwL6mK8LGQ6XhisbalbJnT/view?usp=drive_link)
 
 ---
 
@@ -65,6 +72,8 @@ The project idea is to serve as the starter for a social platform. Here one will
 
 - [Link to profile pitch video](https://drive.google.com/file/d/12LfOx73bNgdeR_UXIc1wHvllSpXry8s6/view?usp=drive_link)
 - [Second link to profile pitch video](https://drive.google.com/file/d/1kgqqiUaF-HEvKLodbSKq8P3KkVnrirCb/view?usp=drive_link)
+
+- [Third link to profile pitch video]()
 
 ---
 
