@@ -42,18 +42,17 @@ import Api from "../utils/Api.js";
 const api = new Api({
   baseUrl: "https://around-api.en.tripleten-services.com/v1",
   headers: {
-    authorization: "796a3d98-ece2-444b-9ac5-30a564e35122", // Replace with your actual token
+    authorization: "796a3d98-ece2-444b-9ac5-30a564e35122",
     "Content-Type": "application/json",
   },
 });
 
 let userId;
 
-//Destructure second item in the callback of the .then()
 api
   .getAppInfo()
   .then(([userData, cards]) => {
-    userId = userData._id; //deined user id now
+    userId = userData._id;
     profileTitle.textContent = userData.name;
     profileText.textContent = userData.about;
     document.querySelector(".profile__image").src = userData.avatar;
@@ -62,9 +61,6 @@ api
       const cardElement = getCardElement(element);
       cardsList.append(cardElement);
     });
-    //Handle the user's information
-    // set the src of the avatar image
-    // set the textContent of bot text elements.
   })
   .catch(console.error);
 
@@ -132,7 +128,6 @@ function handleDeleteSubmit(evt) {
     .then(() => {
       selectedCard.remove();
       closeModal(deleteModal);
-      //todo remove cards from do amd close the modal
     })
     .catch(console.error)
     .finally(() => {
@@ -141,7 +136,6 @@ function handleDeleteSubmit(evt) {
 }
 
 function handleDeleteCard(cardElement, cardId) {
-  //evt.target.closest(".card").remove();
   selectedCard = cardElement;
   selectedCardID = cardId;
   openModal(deleteModal);
@@ -161,13 +155,6 @@ function handleLike(evt, id) {
       }
     })
     .catch(console.error);
-
-  //evt.target.classList.toggle("card__button_active");
-  // 1 check whwter card is liked or not
-  //const isLiked=???
-  //2. call the changeLikeStatus method, passing it the appropiate arguments
-  //3. handle the response (.then and .catch)
-  //$. in the .then, toggle active class.
 }
 
 let selectedCard;
@@ -184,23 +171,17 @@ function getCardElement(data) {
   cardImageElement.alt = data.name;
   cardTitleElement.textContent = data.name;
 
-  //todo- if the card is liked, set the active class on card
-
   const cardLikeButton = cardElement.querySelector(".card__button");
   if (data.isLiked) {
     cardLikeButton.classList.add("card__button_active");
   }
 
   cardLikeButton.addEventListener("click", (evt) => handleLike(evt, data._id));
-  //cardLikeButton.classList.toggle("card__button_active");
 
   const cardTrashButton = cardElement.querySelector(".card__trash-button");
   cardTrashButton.addEventListener("click", () =>
     handleDeleteCard(cardElement, data._id)
-  ); // {
-  //   //cardElement.remove();
-  //   openModal(deleteModal);
-  // });
+  );
 
   cardImageElement.addEventListener("click", () => {
     previewImage.src = data.link;
@@ -245,10 +226,6 @@ function handleProfileFormSubmit(evt) {
   evt.preventDefault();
 
   renderLoading(true, editProfileSubmitButton);
-  //change text content to "Saving..."
-  //const submitBtn = evt.submitter;
-  //submitBtn.textContent = "Saving...";
-  //setButtonText(btn, true);
 
   api
     .editUserInfo({
@@ -256,7 +233,6 @@ function handleProfileFormSubmit(evt) {
       about: descriptionInput.value,
     })
     .then((updatedUser) => {
-      // Todo Use data argument instead of the input values
       profileTitle.textContent = updatedUser.name;
       profileText.textContent = updatedUser.about;
       closeModal(editProfileModal);
@@ -267,9 +243,6 @@ function handleProfileFormSubmit(evt) {
     .catch(console.error)
     .finally(() => {
       renderLoading(false, editProfileSubmitButton);
-      //To do Call setButtonText instead
-      //submitBtn.textContent = "Save";
-      //change text content back to "Save"
     });
 }
 
@@ -292,8 +265,6 @@ function handleAvatarFormSubmit(evt) {
       renderLoading(false, avatarSubmitButton);
     });
 }
-
-//Todo impliment loading text for all other form submisions
 
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
 

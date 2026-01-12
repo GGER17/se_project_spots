@@ -18,7 +18,6 @@ class Api {
   }
 
   getAppInfo() {
-    //Todo call in this array other methods
     return Promise.all([this.getUserInfo(), this.getInitialCards()]);
   }
 
@@ -32,7 +31,6 @@ class Api {
     return fetch(`${this._baseUrl}/users/me`, {
       method: "PATCH",
       headers: this._headers,
-      // Send the data in the body as a JSON string.
       body: JSON.stringify({
         name,
         about,
@@ -44,14 +42,11 @@ class Api {
     return fetch(`${this._baseUrl}/users/me/avatar`, {
       method: "PATCH",
       headers: this._headers,
-      // Send the data in the body as a JSON string.
       body: JSON.stringify({
         avatar,
       }),
     }).then(this._handleServerResponse);
   }
-
-  //Todo impliment post / cards
 
   addCard({ name, link }) {
     return fetch(`${this._baseUrl}/cards`, {
@@ -65,7 +60,6 @@ class Api {
     return fetch(`${this._baseUrl}/cards/${id}`, {
       method: "DELETE",
       headers: this._headers,
-      // Send the data in the body as a JSON string.
     }).then(this._handleServerResponse);
   }
 
@@ -73,12 +67,8 @@ class Api {
     return fetch(`${this._baseUrl}/cards/${id}/likes`, {
       method: isLiked ? "DELETE" : "PUT",
       headers: this._headers,
-      // Send the data in the body as a JSON string.
     }).then(this._handleServerResponse);
   }
-
-  //Todo Create other method, getUserInfor (different base url)
-  // other methods for working with the API
 }
 
 export default Api;
