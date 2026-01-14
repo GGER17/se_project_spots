@@ -49,13 +49,15 @@ const api = new Api({
 
 let userId;
 
+const profileAvatar = document.querySelector(".profile__image");
+
 api
   .getAppInfo()
   .then(([userData, cards]) => {
-    userId = userData._id;
+    userId = userData._id; //
     profileTitle.textContent = userData.name;
     profileText.textContent = userData.about;
-    document.querySelector(".profile__image").src = userData.avatar;
+    profileAvatar.src = userData.avatar;
 
     cards.forEach((element) => {
       const cardElement = getCardElement(element);
@@ -99,7 +101,6 @@ const profileNameInput = editProfileModal.querySelector("#profile-name-input");
 const descriptionInput = editProfileModal.querySelector(
   "#profile-description-input"
 );
-const profileAvatar = document.querySelector(".profile__image");
 
 const cardCaptionInput = newPostModal.querySelector("#card-caption-input");
 const linkInput = newPostModal.querySelector("#card-image-input");
