@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+.modal__container-delete {
+  max-width: 630px;
+}
+
 .modal__image-container {
   display: flex;
   flex-direction: column;
@@ -162,6 +166,7 @@
   width: 100%;
   border-radius: 8px;
   transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .modal__submit-button_disabled {
@@ -176,6 +181,67 @@
 
 .modal__submit-button:hover {
   opacity: 0.8;
+}
+
+.modal__box {
+  display: flex;
+  justify-content: center;
+}
+
+.modal__question {
+  text-align: center;
+}
+
+.modal__close-delete {
+  position: absolute;
+  top: 0px;
+  right: -52px;
+  border: none;
+  background: transparent url("../images/Property1=Variant3.svg") center
+    no-repeat;
+  height: 40px;
+  width: 40px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.modal__btns-container {
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.modal__submit-button_delete {
+  width: 156px;
+  background-color: rgba(255, 101, 101, 1);
+  border: none;
+  color: rgba(33, 33, 33, 1);
+}
+
+.modal__submit-button_delete:hover {
+  background-color: rgba(255, 51, 51, 1);
+  opacity: 1;
+}
+
+.modal__submit-button_cancel {
+  width: 156px;
+  border: 1px solid rgba(33, 33, 33, 1);
+  background-color: transparent;
+  color: rgba(33, 33, 33, 1);
+}
+
+.modal__submit-button_cancel:hover {
+  background-color: rgba(33, 33, 33, 1);
+  color: rgba(255, 255, 255, 1);
+  opacity: 1;
+}
+
+@media (max-width: 726px) {
+  .modal__close-delete {
+    top: -56px;
+    right: 6px;
+  }
 }
 
 @media (max-width: 630px) {
@@ -222,5 +288,21 @@
   .modal__text {
     max-width: 175px;
     font-size: 16px;
+  }
+
+  .modal__delete-contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal__btns-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .modal__close-delete {
+    top: -56px;
+    right: 6px;
   }
 }
